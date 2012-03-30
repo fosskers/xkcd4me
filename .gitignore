@@ -1,0 +1,3 @@
+# Files to ignore for xkcd4me
+.xkcd_cache/  # Is this syntax correct?
+.comics/

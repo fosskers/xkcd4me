@@ -1,0 +1,65 @@
+XKCD4ME
+
+file:    xkcd4me.py
+author:  Colin Woodbury
+contact: colingw AT gmail
+
+xkcd4me is a Python3 script that manages the downloading and viewing
+of xkcd comics. (Unfamiliar? Let's change that: http://xkcd.com)
+
+DEPENDENCIES 
+------------
+- xkcd4me works on Linux, OSX, and Windows using Cygwin.
+- You need Python3.1 or later.
+- You also need httplib2. Get it here:
+http://code.google.com/p/httplib2/downloads/detail?name=httplib2-python3-0.5.0.zip&can=2&q=
+
+RUNNING XKCD4ME
+---------------
+- Run xkcd4me.py on the command-line as:
+    xkcd4me.py
+  to open an interactive prompt. 
+- Additional arguments can be passed on the command-line. Saying:
+    xkcd4me.py n
+  will download the lastest comic.
+
+    xkcd4me.py 234
+  will open (or download first) comic #234.
+
+    xkcd4me.py 45-90
+  will download comics 45 to 90, provided you don't have them already.
+
+    xkcd4me.py all
+  will download all the comics that you don't have. ALL of them.
+
+    xkcd4me.py r
+  will open (or download) *a random comic*.
+
+    xkcd4me.py wipe
+  will clear your cache and delete all the comic image files.
+
+    xkcd4me.py ls
+  will display all the comics you have.
+
+    xkcd4me.py head
+  will display your first ten comics.
+
+    xkcd4me.py tail
+  will display your last ten comics.
+
+USING THE PROMPT
+----------------
+- Follow the instructions given to you while running the script.
+- All the commands written above are also available in the prompt,
+  so using certain commands over and over is a bit easier,
+  *especially 'r', the command that brings up a random comic for your 
+  viewing pleasure*.
+
+ABOUT XKCD4ME'S INTERNET CONNECTION
+-----------------------------------
+- The script will attempt to connect to the xkcd servers upon being run.
+  If it fails, no internet dependant functions will be available until
+  an internet connection is completed and the script is restarted.
+- Note that if while using the script through its prompt a connection is made,
+  the script will not detect this until it has been restarted.
+
